@@ -3,15 +3,17 @@ import React from "react";
 const About: React.FC = () => {
   return (
     <div className="container mt-5 mb-4 ">
-      <h2 className="text-center mb-4 about_text">Acera de nosotros</h2>
-      <div className="text-center mb-4 about_text_subtitle">
-        <p>
-          Somos una familia comprometida con la comercialización de ganado en
-          pie, respaldada por más de una década de experiencia en el sector.
-          Este 2024, hemos decidido dar un paso más y lanzar una línea de cortes
-          cárnicos Premium, pensados para ofrecer lo mejor en calidad y precio
-          al alcance de todos.
-        </p>
+      <div className="aboutUs-contanier">
+        <h2 className="text-center mb-4 about_text">Acerca de nosotros</h2>
+        <div className="text-center mb-4 about_text_subtitle">
+          <p>
+            Somos una familia comprometida con la comercialización de ganado en
+            pie, respaldada por más de una década de experiencia en el sector.
+            Este 2024, hemos decidido dar un paso más y lanzar una línea de
+            cortes cárnicos Premium, pensados para ofrecer lo mejor en calidad y
+            precio al alcance de todos.
+          </p>
+        </div>
       </div>
 
       <div className="row text-center mb-4">
@@ -71,11 +73,11 @@ const About: React.FC = () => {
               <h3 className="card-title">Compromiso</h3>
               <p className="card-title-about">
                 Estamos comprometidos a ofrecer siempre lo mejor a nuestros
-                clientes, desde la selección del ganado  hasta el
-                empaquetado y maduración de nuestros cortes. Nos comprometemos a
-                mantener un estándar de excelencia en todos nuestros procesos,
-                asegurando que cada producto que llega a su mesa cumpla con
-                nuestras promesas de calidad, frescura y sabor. 
+                clientes, desde la selección del ganado hasta el empaquetado y
+                maduración de nuestros cortes. Nos comprometemos a mantener un
+                estándar de excelencia en todos nuestros procesos, asegurando
+                que cada producto que llega a su mesa cumpla con nuestras
+                promesas de calidad, frescura y sabor.
               </p>
             </div>
           </div>
@@ -83,17 +85,17 @@ const About: React.FC = () => {
       </div>
 
       {/* Sección del video */}
-      <div className="text-center mb-4">
-        <h3>¡Mira nuestro video!</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/os8sKMhHOsM"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <div className="text-center mb-4 video-container">
+        <h3 className="card-title">¡Mira nuestro video!</h3>
+        <div className="video-wrapper">
+          <iframe
+            src="https://www.youtube.com/embed/os8sKMhHOsM"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );

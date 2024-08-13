@@ -130,11 +130,11 @@ const CardProducts: React.FC<CardProductsProps> = ({
           justifyContent: "space-between",
         }}
       >
-        <h5 className="card-title">{title}</h5>
+        <h5 className="card-title-card">{title}</h5>
         <p className="card-text" style={{ marginBottom: "0.2rem" }}>
           {formatPrice(price)}
         </p>
-        <p className="card-text-presentacion">PRESENTACION</p>
+        <p className="card-text-presentacion">PRESENTACIÓN</p>
         <p
           className="card-text"
           style={{ marginTop: "0", marginBottom: "1rem" }}

@@ -14,7 +14,30 @@ const Home: React.FC = () => {
 
       <div className="text_Nuestros_Productos">Nuestros productos</div>
 
-      <ProductList />
+      <div
+        className="bg-cards"
+        style={{
+          backgroundImage: `url('https://i.pinimg.com/564x/74/fd/f1/74fdf1b8a4d4e56910839da7e8b80dc5.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          borderRadius: "20px",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: "rgba(255, 255, 255, 0.0)",
+            borderRadius: "20px",
+          }}
+        />
+        <ProductList />
+      </div>
 
       <FunFacts />
 
