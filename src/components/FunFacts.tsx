@@ -17,7 +17,7 @@ const DatosCuriososDeCarne: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 containerFunFact">
       <h2 className="text-center text_fun_fact">
         <FontAwesomeIcon icon={faLightbulb} /> 
          Sabias que...

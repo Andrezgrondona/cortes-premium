@@ -6,10 +6,12 @@ import ProductList from "../components/ProductList";
 import FunFacts from "../components/FunFacts";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+import logoResponsive from "../assets/logo.png";
 
 const Home: React.FC = () => {
   return (
     <div>
+      <img src={logoResponsive} alt="Logo" className="logoResonsive" />
       <img src={fondoInicial} alt="Logo" style={{ width: "100%" }} />
 
       <div className="text_Nuestros_Productos">Nuestros productos</div>
